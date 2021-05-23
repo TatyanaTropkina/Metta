@@ -104,6 +104,7 @@ $(function () {
 
 		$('.adapt__title-left, .adapt__title-right').attr('data-wow-offset' , '100');
 		$('.gallery__title').attr('data-wow-offset' , '100');
+		$('.works__energy-anim , works__stressed-anim').removeAttr('data-wow-offset')
 	}
 });
 

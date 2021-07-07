@@ -114,8 +114,9 @@ $(function () {
 	// 		blogForm.addClass('anim');
 	// 	}
 	// });
+
 	$(document).ready(function(){
-		$('.header__content-img').addClass('animate__animated animate__fadeInUpBig');
+		
 		$('.adapt__title-left').addClass('animate__animated animate__fadeInRightBig wow')
 		$('.adapt__title-left').attr('data-wow-offset', '300')
 		$('.adapt__title-right').addClass('animate__animated animate__fadeInLeftBig wow')
@@ -130,8 +131,29 @@ $(function () {
 			"data-wow-delay": "1s"
 		});
 
+	})
+	$(document).ready(function(){
 
+		if ($(window).width() < 769) {
+			$('.blog__item-box').removeClass('animate__animated animate__fadeInUp wow')
+			$('.blog__item').addClass('animate__animated animate__fadeInUp wow')
 
+			$('.drink__list').removeClass('animate__animated animate__fadeInRightBig wow');
+			$('.drink__list').removeAttr('data-wow-offset' , '280');
+	
+			$('.drink__list-name').addClass('animate__animated animate__fadeInRightBig wow');
+			$('.drink__list-descr').addClass('animate__animated animate__fadeInLeftBig wow');
+	
+	
+			$('.drink__list-name').attr('data-wow-offset' , '200');
+			$('.drink__list-descr').attr('data-wow-offset' , '200');
+	
+			$('.section__content').addClass('animate__animated animate__fadeInUp wow');
+			$('.section__content').attr('data-wow-offset' , '100');
+		}else{
+			$('.section__content').addClass('animate__animated animate__fadeInRight wow');
+
+		}
 	})
 	// if ($(window).width() < 767) {
 
@@ -144,24 +166,26 @@ $(function () {
 	// 	$('.works__energy-anim , works__stressed-anim').removeAttr('data-wow-offset')
 	// }
 });
-
 $(function () {
-	 if ($(window).width() < 767) {
-		$('.drink__list').removeClass('animate__animated animate__fadeInRightBig wow');
-		$('.drink__list').removeAttr('data-wow-offset' , '280');
+	// $('.header__content-img').addClass('animate__animated animate__fadeInUpBig');
 
-		$('.drink__list-item:nth-child(odd)').addClass('animate__animated animate__fadeInRightBig wow');
-		$('.drink__list-item:nth-child(even)').addClass('animate__animated animate__fadeInLeftBig wow');
+})
+$(function () {
 
 
-		$('.drink__list-item:nth-child(odd)').attr('data-wow-offset' , '200');
-		$('.drink__list-item:nth-child(even)').attr('data-wow-offset' , '200');
+	
+	  
+	//  else {
 
-	 }
+	//  }
+	//  if ($(window).width() > 768) {
+	// 	$('.drink__content').toggleClass('animate__animated animate__fadeInUp wow');
+	// 	// $('.drink__content').attr('data-wow-offset' , '300');
+	//  }
+	 
+
 	
-	
-	
-	
+
 });
 $(function () {
 	$(document).ready(function () {

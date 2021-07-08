@@ -79,7 +79,7 @@ $(function (){
 
 		}else{
 			$('.section__content').addClass('animate__animated animate__fadeInRight wow');
-			$('.drink__list').addClass('animate__animated animate__fadeInRightBig wow');
+			$('.drink__list').addClass('animate__animated animate__fadeInLeft wow');
 			$('.drink__list').attr('data-wow-offset' , '280');
 			$('.blog__item-box').addClass('animate__animated animate__fadeInUp wow')
 		}

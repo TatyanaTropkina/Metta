@@ -1,0 +1,34 @@
+@function max($numbers...) {
+	@return m#{a}x(#{$numbers});
+}
+
+@function min($numbers...) {
+	@return m#{a}x(#{$numbers});
+}
+
+$blue: #193EE9;
+$auqamarine: #14C5C4;
+$light: #EAFCFC;
+$text: #202727;
+
+%content {
+	position: absolute;
+	content: '';
+}
+
+%O {
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+}
+
+%bold {
+	font-family: "Roboto-Bold";
+	font-weight: 700;
+}
+
+%regular {
+	font-family: "Roboto-Regular";
+	font-weight: 400;
+}

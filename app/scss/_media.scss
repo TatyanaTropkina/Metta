@@ -1,0 +1,385 @@
+@media(max-width: 1200px) {
+	.drink__img {
+
+		max-height: 500px;
+	}
+
+	.drink__img-bg {
+
+		height: 334px;
+		width: 334px;
+
+	}
+
+	.drink__list-descr {
+		margin: 0 0 30px 0;
+	}
+
+	.works__img {
+		max-height: 480px;
+
+	}
+
+	.blog__item-title {
+		font-size: 22px;
+	}
+
+	.blog__items {
+
+		display: grid;
+		grid-template-columns: repeat(2, minmax(260px, 334px));
+		grid-template-rows: repeat(3, auto);
+		grid-gap: 16px;
+		margin-bottom: 30px;
+
+	}
+
+	.blog__item--3 {
+		grid-row-start: 2;
+		grid-row-end: 4;
+	}
+
+	.blog__item--2 {
+		grid-row-start: 1;
+		grid-row-end: 3;
+		grid-column-start: 2;
+		grid-column-end: 3;
+	}
+
+
+	.blog {
+
+		margin-bottom: 100px;
+
+	}
+
+	.blog__item-img--1 {
+		max-height: 264px;
+	}
+
+	.blog__item-img--2 {
+		max-height: 331px;
+		object-position: top;
+	}
+
+
+
+	.blog__item-img--4 {
+		max-height: 300px;
+		object-position: 0 -37px;
+
+
+	}
+}
+
+@media(max-width: 1000px) {
+	.adapt__img {
+		width: 100px;
+		height: 100px;
+
+	}
+
+	.reviews {
+
+		padding: 300px 0 80px;
+
+		&::before {
+			background: url(../images/reviews.jpg) 80% center / cover no-repeat fixed;
+		}
+
+		&::after {
+			background-color: rgba(#fff, .5);
+		}
+	}
+
+}
+
+@media(max-width: 900px) {
+	.section__title {
+		font-size: 30px;
+	}
+
+	.drink__title {
+		margin-bottom: 20px;
+	}
+
+	.section__text {
+		margin-bottom: 20px;
+	}
+
+	.drink__list-descr {
+		margin: 0 0 20px 0;
+	}
+
+	.drink__img {
+		max-height: 434px;
+	}
+
+	.drink__img-bg {
+
+		height: 268px;
+		width: 268px;
+
+	}
+
+	.blockquote__text {
+		max-width: 597px;
+		font-size: 30px;
+
+	}
+
+	.works__energy,
+	.works__stressed {
+		width: 90px;
+		height: 15px;
+	}
+
+	.works__wrapper {
+		padding-right: 45px;
+	}
+
+	.works__stressed-wrapper {
+		right: 116px;
+	}
+
+	.works__img {
+		height: 424px;
+	}
+
+	.adapt__img {
+		width: 80px;
+		height: 80px;
+
+	}
+}
+
+@media(max-width: 768px) {
+
+	.header,
+	.gallery,
+	.drink,
+	.benefits,
+	.adapt,
+	.reviews,
+	.blockquote {
+		margin-bottom: 90px;
+	}
+
+	.header__top {
+		padding: 30px 0;
+	}
+
+	.header__title {
+		margin-bottom: 40px;
+		font-size: 34px;
+	}
+
+	.drink__inner,
+	.works__inner,
+	.adapt__inner {
+		display: block;
+		text-align: center;
+	}
+
+	.section__content {
+		max-width: 600px;
+		margin: 0 auto 50px;
+	}
+
+	.drink__title {
+		max-width: none;
+	}
+
+	.drink__img-wrapper {
+
+		margin-bottom: 50px;
+
+	}
+
+	.drink__img {
+		max-height: 369px;
+		object-fit: contain;
+	}
+
+	.works__img {
+		max-height: 584px;
+		max-width: 467px;
+	}
+
+
+	.works__wrapper {
+		padding-right: 45px;
+		max-width: 470px;
+		margin: 0 auto;
+
+	}
+
+	.benefits__text {
+		font-size: 14px;
+		bottom: 1px;
+	}
+
+	.benefits {
+
+		.slick-slide {
+			margin: 0 10px;
+		}
+	}
+
+	.adapt__title-img {
+
+		transform: translateY(0);
+		margin-bottom: 40px;
+
+	}
+
+	.adapt__title {
+		max-width: none;
+	}
+
+	.adapt__title-left {
+
+		margin: 0 0 0 -20px;
+	}
+
+	.adapt__items {
+
+		grid-gap: 42px;
+		justify-content: center;
+	}
+
+
+	.reviews {
+		padding: 214px 0 80px;
+
+		&::before {
+			background: url(../images/reviews.jpg) center / cover no-repeat fixed;
+		}
+
+	}
+
+	.reviews__blockquote {
+		max-width: 390px;
+
+
+	}
+
+	.reviews__blockquote-text {
+		font-size: 28px;
+
+	}
+
+	.blockquote__text {
+		max-width: 455px;
+		font-size: 23px;
+	}
+}
+
+@media(max-width: 600px) {
+	.reviews {
+		padding: 131px 0 80px;
+
+	}
+
+	.adapt__items {
+
+		grid-template-columns: repeat(2, auto);
+		grid-gap: 0 20px;
+	}
+
+	.blog__items {
+		display: block;
+
+	}
+
+	.blog__item {
+		margin: 0 auto;
+	}
+
+	.blog__item-img--1 {
+		max-height: 236px;
+	}
+
+	.blog__item-img--2 {
+		max-height: 281px;
+
+	}
+
+	.blog__item-img--4 {
+		max-height: 238px;
+
+	}
+
+	.blog__item-title {
+		font-size: 20px;
+		margin-bottom: 13px;
+
+	}
+
+}
+
+
+@media (max-width:500px) {
+	.section__title {
+		font-size: 27px;
+	}
+
+	.section__text {
+		margin-bottom: 12px;
+	}
+
+	body {
+
+		line-height: 187%;
+	}
+
+	.section__content {
+		margin: 0 auto 30px;
+	}
+
+	.works__img {
+		height: 344px;
+	}
+
+	.reviews {
+		padding: 80px 0;
+	}
+
+	.reviews__blockquote-text {
+		font-size: 22px;
+	}
+
+	.reviews__blockquote-author {
+		font-size: 15px;
+	}
+
+	.reviews__blockquote {
+		max-width: 298px;
+	}
+}
+
+@media(max-width: 400px) {
+	.benefits__img {
+		max-width: 277px;
+		max-height: 297px;
+	}
+
+	.header .logo__img {
+		max-width: 126px;
+
+	}
+
+	.header__top {
+		padding: 15px 0;
+	}
+
+	.header__top {
+		padding: 15px 0;
+	}
+
+	.menu__list {
+
+		padding: 85px 55px 30px 20px;
+	}
+
+}

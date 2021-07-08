@@ -1,0 +1,110 @@
+html {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+	overflow-x: hidden;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	padding: 0;
+	margin: 0;
+}
+
+figure {
+	margin: 0;
+}
+
+blockquote {
+	margin: 0;
+}
+
+body {
+	color: $text;
+	@extend %regular;
+	font-size: 16px;
+	line-height: 200%;
+	letter-spacing: 0.01px;
+	overflow-X: hidden;
+
+}
+
+dd,
+dl {
+	margin: 0;
+}
+
+ul,
+li {
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+p {
+	margin: 0;
+}
+
+.container {
+	max-width: 1130px;
+	padding: 0 15px;
+	margin: 0 auto;
+
+}
+
+.container-fluid--small {
+	max-width: 1360px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.container-fluid {
+	max-width: 1470px;
+	margin: 0 auto;
+}
+
+button {
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+}
+
+.section__content {
+	margin: auto 0;
+	max-width: 320px;
+}
+
+.section__title {
+	font-size: 32px;
+	line-height: 125%;
+	letter-spacing: 0.02px;
+	@extend %bold;
+	margin-bottom: 36px;
+}
+
+.section__text {
+	margin-bottom: 27px;
+}
+
+.section__link {
+	font-size: 16px;
+	line-height: 160%;
+	@extend %bold;
+	text-transform: uppercase;
+	color: $text;
+	transition: all .2s;
+
+	&:hover {
+		color: $auqamarine;
+
+	}
+}

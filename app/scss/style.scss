@@ -57,7 +57,6 @@
 	&::before {
 		@extend %content;
 		background-image: url(../images/header-line.svg);
-		// background-size: cover;
 		background-size: contain;
 		bottom: -130px;
 		left: 0;

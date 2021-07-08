@@ -17,7 +17,6 @@ let path = {
         js: ["app/js/**/*.js", '!app/js/**/webp.js'],
         images: "app/images/**/*.{jpg,png,svg,gif,ico,webp}",
         fonts: "app/fonts/**/*.*",
-        video: "app/video/**/*.*",
     },
 }
 
@@ -58,7 +57,6 @@ function watchFiles(params) {
     gulp.watch(['app/scss/*.scss'], scss);
     gulp.watch(['app/js/*.js'], js);
     gulp.watch(['app/images/**/*.{jpg,png,svg,gif,ico,webp}'], images);
-    gulp.watch(['app/video/*.*'], video);
 }
 
 function clean(params) {
@@ -145,12 +143,6 @@ function js() {
         .pipe(browsersync.stream());
 }
 
-function video() {
-    return src(path.src.video)
-        .pipe(dest(path.build.video))
-        .pipe(browsersync.stream())
-}
-
 function fonts() {
     src(path.src.fonts)
         .pipe(ttf2woff())
@@ -192,12 +184,11 @@ function cb() {
 
 }
 
-let build = gulp.series(clean, gulp.parallel(scss, html, css, js, addScript, images, video, fonts), fontsStyle);
+let build = gulp.series(clean, gulp.parallel(scss, html, css, js, addScript, images, fonts), fontsStyle);
 let watch = gulp.parallel(build, watchFiles, browserSync);
 
 exports.fontsStyle = fontsStyle;
 exports.fonts = fonts;
-exports.video = video;
 exports.addScript = addScript;
 exports.js = js;
 exports.images = images;

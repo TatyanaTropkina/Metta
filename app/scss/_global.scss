@@ -103,7 +103,9 @@ button {
 	color: $text;
 	transition: all .2s;
 
-	&:hover {
+	&:hover,
+	&:focus,
+	&:active {
 		color: $auqamarine;
 
 	}
